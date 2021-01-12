@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Eleventy Blog</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/landing.css"/>
+
+  </head>
+
+  <body>
+    <header>
+      <a href="/">Blog</a>
+
+      <a href="/About">About</a>
+    </header>
+    <div class="super">
+      <main class="articles-super">
+        <div class="articles-container">
+          {{ content | safe }}
+        </div>
+      </main>
+    </div>
+    {# {% for i in userList %}
+  <li>{{ i }} </li>
+  {% endfor %} #}
+    <footer>Site Footerx</footer>
+
+  </body>
+
+</html>

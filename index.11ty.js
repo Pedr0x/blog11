@@ -24,7 +24,7 @@ class Test {
         };
     }
     render(data) {
-        console.log(data.collections.post, 25);
+        //     console.log(data.collections.post, 25);
         return ` 
 ${data.collections.post
     .map(

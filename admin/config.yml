@@ -19,4 +19,4 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Content", name: "conent", widget: "markdown" }
+          - { label: "Content", name: "body", widget: "markdown" }

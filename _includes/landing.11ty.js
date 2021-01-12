@@ -1,9 +1,7 @@
-const header = require("../posts-2019/components/header.11ty");
-
 class Test {
-	constructor() {}
-	render(data) {
-		return ` 
+    constructor() {}
+    render(data) {
+        return ` 
         <!DOCTYPE html>
         <html lang="en">
             <head>
@@ -19,7 +17,6 @@ class Test {
                 <title>${data.title}</title>
             </head>
             <body>
-                ${header()}
                 <div class="super-container landing-super-container">
              
                 <main class="articles-container">
@@ -30,8 +27,6 @@ class Test {
                 </div>
                 <footer>Site Footer</footer>
             </body>
-            <script src="../../dist/blog1.js"></script>
-            <script src="../../dist/stylos.4c86ac89.js"></script>
             <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -46,7 +41,7 @@ class Test {
         </html>
         
         `;
-	}
+    }
 }
 
 module.exports = Test;

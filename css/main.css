@@ -1,3 +1,28 @@
-* {
-    background: gold;
+/* @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap");
+ */
+:root {
+	--primary: #1e90ff;
+	--secondary: #7d4f74;
+	--tertiary: #fff;
+	--quart: #f1d302;
+	--quin: #020100;
+	--light-text: #6f6f6e;
+	--background: #f2f3f5;
+	--accent: #47c09f;
+
+	--serif: "Bitter";
+	--XXBig: 3.052rem;
+	--XBig: 2.441rem;
+	--Big: 1.953rem;
+	--BigSmall: 1.563rem;
+	--NormalBig: 1.25rem;
+	--Normal: 1rem;
+	--SmallBig: 0.8rem;
+	--Small: 0.64rem;
+	--XSmall: 0.512rem;
+}
+
+.super-container {
+	padding: 0 2rem;
+	background: var(--background);
 }

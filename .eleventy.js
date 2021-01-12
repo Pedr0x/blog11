@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-    eleventyConfig.dataTemplateEngine = ["njk", "11ty.js"];
+    eleventyConfig.dataTemplateEngine = ["njk", "md", "11ty.js"];
     eleventyConfig.addFilter(
         "relative",
         (page, root = "/") =>
@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("admin");
-
+    //oxoft2021
     return {
         passthroughFileCopy: true,
     };

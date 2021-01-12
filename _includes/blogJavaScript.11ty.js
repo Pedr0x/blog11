@@ -1,5 +1,11 @@
 class Test {
     constructor() {}
+    data() {
+        return {
+            tags: ["post"],
+        };
+    }
+
     render(data) {
         return ` 
 <!DOCTYPE html> 
@@ -18,11 +24,6 @@ class Test {
 	
 </head> 
 <body> 
-	<header>
-		this is a blog 
-		<a href="/About">Abouxtx</a>
-				<a href="/About">Pehdrox</a>
-	</header> 
 	<main class="super-container super-container-blog"> 
 	<img  src="https://images.pexels.com/photos/6127217/pexels-photo-6127217.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="blog-main-img"/>
 
@@ -32,7 +33,8 @@ class Test {
 	<h1 class="blog-title">  ${data.title}</h1>
 	</div>
 		${data.content}
-		
+		"tags": "posts"
+
 	</div>
 	</main> 
 	</body>

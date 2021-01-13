@@ -22,7 +22,7 @@ collections:
           - { label: "Content", name: "body", widget: "markdown" }
           - {
                 label: "Main Image",
-                name: "mainImg",
+                name: "mainImage",
                 widget: "file",
                 default: "/uploads/idk.pdf",
                 media_library: { config: { multiple: false } },

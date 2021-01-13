@@ -4,7 +4,7 @@ title: blog cms1
 date: 2021-01-12T05:20:42.630Z
 tags: post
 content: "13123123"
-mainImage: "idk.jpg"
+mainImage: "../../uploads/idk.jpg"
 ---
 
 blog blog bloggin content

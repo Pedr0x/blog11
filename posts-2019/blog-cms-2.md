@@ -2,7 +2,7 @@
 layout: blogJavaScript.11ty.js
 title: Blog-cms-2
 date: 2021-01-12T19:56:45.643Z
-mainImage: "mountains.jpg"
+mainImage: "../../uploads/mountains.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

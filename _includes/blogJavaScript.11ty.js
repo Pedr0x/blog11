@@ -28,7 +28,7 @@ class Test {
 </head> 
 <body> 
 	<main class="super-container super-container-blog"> 
-<img  src="../../uploads/${data.mainImage}" class="blog-main-img"/>
+<img  src="${data.mainImage}" class="blog-main-img"/>
 
 	<div class="blog-container">
 

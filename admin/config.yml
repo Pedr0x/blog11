@@ -20,3 +20,10 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Content", name: "body", widget: "markdown" }
+          - {
+                label: "Main Image",
+                name: "mainImg",
+                widget: "file",
+                default: "/uploads/idk.pdf",
+                media_library: { config: { multiple: false } },
+            }

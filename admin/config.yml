@@ -24,6 +24,6 @@ collections:
                 label: "Main Image",
                 name: "mainImage",
                 widget: "file",
-                default: "/uploads/idk.jpg",
+                default: "../../uploads/idk.jpg",
                 media_library: { config: { multiple: false } },
             }

@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
             `${require("path").relative(page.filePathStem, root)}/`
     );
     eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("uploas");
+    eleventyConfig.addPassthroughCopy("uploads");
     eleventyConfig.addPassthroughCopy("admin");
     //oxoft2021
     return {

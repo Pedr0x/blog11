@@ -26,8 +26,8 @@ class Test {
                 </main>
                 </div>
                 </div>
-
                 </body>
+                
             <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

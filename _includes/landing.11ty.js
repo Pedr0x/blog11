@@ -10,14 +10,14 @@ class Test {
                 <link rel="stylesheet" href="../../css/main.css" />
                 <link rel="stylesheet" href="../../css/reset.css" />
                 <link rel="stylesheet" href="../../css/normalize.css" />
-
                 <link rel="stylesheet" href="../../css/landing.css" />
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
                 <title>${data.title}</title>
             </head>
             <body>
-                <div class="super-container landing-super-container">
+                <div class="super-container">
+                <div class="landing-super-container">
              
                 <main class="articles-container">
                 <div class="articles-inner">
@@ -25,8 +25,9 @@ class Test {
                     </div>
                 </main>
                 </div>
-                <footer>Site Footer</footer>
-            </body>
+                </div>
+
+                </body>
             <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

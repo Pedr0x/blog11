@@ -1,3 +1,5 @@
+const marked = require("marked");
+
 class Test {
     constructor() {}
     data() {
@@ -7,15 +9,6 @@ class Test {
     }
 
     render(data) {
-        if (data.title === "Blog-cms-2") {
-            console.log(data.textContent, "full data");
-        }
-        console.log(`
-		
-		${data.title}: ${data.content}
-	
-		`);
-
         return ` 
 <!DOCTYPE html> 
 <html lang="en"> 
@@ -41,7 +34,8 @@ class Test {
 	<div>
 	<h1 class="blog-title">  ${data.title}</h1>
 	</div>
-		${data.content}
+					${marked(data.content)} 
+
 	</div>
 	</main> 
 	</body>

@@ -1,6 +1,5 @@
 ---
-layout: "aboutLayout.11ty.js"
-landingText: "landing-text"
+layout: aboutLayout.11ty.js
+landingText: landing-text
 ---
-
-about about about
+about about about content cms

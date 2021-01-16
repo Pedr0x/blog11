@@ -16,6 +16,9 @@ class Test {
                 <title>${data.title}</title>
             </head>
             <body>
+            <navbar> 
+        <a href="/pagination"> Pagination </a>
+            </navbar>
                 <div class="super-container">
                 <div class="landing-super-container">
              <navbar> 

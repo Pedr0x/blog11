@@ -1,7 +1,7 @@
 class Test {
-    constructor() {}
-    render(data) {
-        return ` 
+	constructor() {}
+	render(data) {
+		return ` 
         <!DOCTYPE html>
         <html lang="en">
             <head>
@@ -16,6 +16,9 @@ class Test {
                 <title>${data.title}</title>
             </head>
             <body>
+            <navbar> 
+        <a href="/pagination"> Pagination </a>
+            </navbar>
                 <div class="super-container">
                 <div class="landing-super-container">
              
@@ -42,7 +45,7 @@ class Test {
         </html>
         
         `;
-    }
+	}
 }
 
 module.exports = Test;

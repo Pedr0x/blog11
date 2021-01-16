@@ -27,3 +27,10 @@ collections:
                 default: "../../uploads/idk.jpg",
                 media_library: { config: { multiple: false } },
             }
+    - name: "about"
+        folder: "about"
+        label: "About"
+        create: false
+        slug: "{{slug}}"
+        fields: # The fields for each document, usually in front matter
+          - { label: "Content", name: "body", widget: "markdown" }

@@ -1,0 +1,3 @@
+---
+landingText: "landing-text"
+---

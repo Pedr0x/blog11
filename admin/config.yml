@@ -5,6 +5,13 @@ backend:
     preview_context: my-provider/deployment
 media_folder: "uploads" # Media files will be stored in the repo under images/uploads
 collections:
+    - name: "about"
+      folder: "about"
+      label: "About"
+      create: false
+      slug: "{{slug}}"
+      fields: # The fields for each document, usually in front matter
+          - { label: "Content", name: "body", widget: "markdown" }
     - name: "blog" # Used in routes, e.g., /admin/collections/blog
       label: "Blog" # Used in the UI
       folder: "posts-2019" # The path to the folder where the documents are stored
@@ -27,10 +34,3 @@ collections:
                 default: "../../uploads/idk.jpg",
                 media_library: { config: { multiple: false } },
             }
-    - name: "about"
-        folder: "about"
-        label: "About"
-        create: false
-        slug: "{{slug}}"
-        fields: # The fields for each document, usually in front matter
-          - { label: "Content", name: "body", widget: "markdown" }

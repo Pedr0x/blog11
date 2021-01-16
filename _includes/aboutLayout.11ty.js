@@ -4,7 +4,7 @@ class Test {
 	constructor() {}
 	data() {
 		return {
-			tags: ["post"]
+			tags: ["about"]
 		};
 	}
 

@@ -7,7 +7,7 @@ media_folder: "uploads" # Media files will be stored in the repo under images/up
 collections:
     - name: "landingText"
       label: "Landing data"
-      folder: "about"
+      slug: "{{slug}}"
       create: false
       extension: "json"
       editor:

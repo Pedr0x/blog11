@@ -6,6 +6,7 @@ backend:
 media_folder: "uploads" # Media files will be stored in the repo under images/uploads
 collections:
     - name: "landingText"
+      label: "Landing data"
       folder: "about"
       create: false
       extension: "json"

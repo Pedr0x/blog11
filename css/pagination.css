@@ -1,0 +1,8 @@
+.paginated-list-super {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr 1fr;
+}
+
+.paginated-list-container {
+    grid-column: 2;
+}

@@ -23,7 +23,7 @@ ${data.collections.post
 						<a href=${post.url}>${post.data.title}</a>
 					</h1>
 					<h3 class="landing-blog-item-date">
-					 	${dayjs(post.date).format(" DD-MM-YYYY")} 
+					 	${dayjs(post.date).format("DD-MM-YYYY")} 
 					 </h3>
 				</div>
 				<h5 class="landing-blog-item-subtitle"> 

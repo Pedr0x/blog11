@@ -54,7 +54,6 @@ function checkValidLink(text, link) {
 }
 
 exports.render = function (data) {
-	console.log(data.pagination.href, 22);
 	const { next, previous, last, first } = data.pagination.href;
 	const links = `
         ${checkValidLink("Siguiente", next)}
@@ -63,7 +62,27 @@ exports.render = function (data) {
         ${checkValidLink("Primero", first)}
 `;
 
-	return `<ol>
+	return ` 
+	<!DOCTYPE html> 
+		<html lang="en"> 
+		<head> 
+			<meta charset="utf-8"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+			<link rel="stylesheet" href="../../css/main.css" />
+			<link rel="stylesheet" href="../../css/pagination.css" />
+			<link rel="stylesheet" href="../../css/reset.css" />
+			<link rel="stylesheet" href="../../css/normalize.css" />
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+			<title>Pagination</title> 
+		</head> 
+
+		<body> 
+			<main class="super-container">
+			<div class="paginated-list-super"> 
+
+<div class="paginated-list-container"> 
+<ol>
       ${data.pagination.items
 			.map(function (item) {
 				return `<li>${item.name} ${item.age}</li>`;
@@ -71,5 +90,14 @@ exports.render = function (data) {
 			.join("")}
             ${links}
            
-    </ol>`;
+    </ol>
+</div>
+</div>
+
+			</main> 
+		</body>
+		</html> 
+	`;
 };
+
+``;

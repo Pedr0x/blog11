@@ -15,24 +15,31 @@ class Test {
 
                 <title>${data.title}</title>
             </head>
+         
             <body>
-            <navbar> 
-        <a href="/pagination"> Pagination </a>
-            </navbar>
-                <div class="super-container">
-                <div class="landing-super-container">
-             <navbar> 
-             <a href="/about">About </a>
-             </navbar>
+				<navbar> 
+				<a href="/pagination"> Pagination </a>
+				</navbar>
+					<div class="super-container">
+					<div class="landing-super-container">
+				<a href="/about">About </a>
+				
+            <div class="landing-main-container">
                 <main class="articles-container">
                 <div class="articles-inner">
                     ${data.content} 
-                    </div>
-                </main>
+                    </div> 
+                </div> 
+				</main>
+				<div class="landing-banner-text-super"> 
+					<div class="landing-banner-text"> 
+						${data.landingData.mainBannerText}
+						</div>
+					</div>
+
                 </div>
                 </div>
                 </body>
-                
             <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

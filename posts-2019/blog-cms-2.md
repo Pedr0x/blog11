@@ -1,6 +1,7 @@
 ---
 layout: blogJavaScript.11ty.js
 title: Blog-cms-2
+landingText: "111 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
 date: 2021-01-12T19:56:45.643Z
 mainImage: "../../uploads/mountains.jpg"
 ---

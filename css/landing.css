@@ -16,7 +16,7 @@ p.landing-about-text {
 	font-size: var(--BigSmall);
 	color: var(--light-text);
 }
-main.articles-container {
+.articles-container {
 	grid-column: 2;
 	align-self: center;
 	justify-self: center;
@@ -58,10 +58,12 @@ h3.landing-blog-item-date {
 	padding: 2% 0;
 }
 .landing-banner-text-super {
-	padding: 2% 3rem 5%;
+	padding: 2% 10rem 5%;
 }
 .landing-banner-text {
 	grid-column: 1/3;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow1);
 	background: white;
 	font-size: var(--BigSmall);
 	padding: 5%;
@@ -71,4 +73,35 @@ h3.landing-blog-item-date {
 .landing-banner-text::before {
 	content: "*";
 	color: var(--accent);
+}
+
+.landing-side-content-super {
+	grid-row: 2;
+	padding: 8% 5%;
+	grid-column: 3;
+}
+
+/* .landing-side-content {
+	position: sticky;
+	top: 2rem;
+	bottom: 0px;
+	background: red;
+	padding: 5%;
+}
+ */
+.landing-side-content-title {
+	font-weight: 500;
+	padding: 0 0 0.25rem;
+	color: var(--quart);
+}
+
+.landing-side-content {
+	position: sticky;
+	top: 2rem;
+	bottom: 0px;
+	padding: 5%;
+	background: var(--tertiary);
+	line-height: var(--line-height1);
+	box-shadow: var(--box-shadow1);
+	border-radius: var(--border-radius);
 }

@@ -1,4 +1,6 @@
 const marked = require("marked");
+const navbar = require("../components/navbar");
+const footer = require("../components/footer");
 
 class Test {
 	constructor() {}
@@ -9,7 +11,7 @@ class Test {
 	}
 
 	render(data) {
-		return ` 
+		return `  
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
@@ -23,16 +25,17 @@ class Test {
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
 
 	<title> About</title> 
-
-	
 </head> 
 <body> 
 	<main class="super-container "> 
+	${navbar}
 	<h1 class="blog-title"> About About</h1>
 	</div>
 					${marked(data.content)} 
 	</div>
 	</main> 
+	${footer}
+
 	</body>
 
 </html> `;

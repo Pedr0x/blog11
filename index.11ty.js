@@ -27,8 +27,8 @@ ${data.collections.post
 					 </h3>
 				</div>
 				<h5 class="landing-blog-item-subtitle"> 
-	${/*post.data.subtitle*/ ""}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+	${post.data.landingText}
+
 	</h5>
 	</article>
 </div>`

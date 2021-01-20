@@ -1,15 +1,17 @@
 const marked = require("marked");
+const navbar = require("../components/navbar");
+const footer = require("../components/footer");
 
 class Test {
-    constructor() {}
-    data() {
-        return {
-            tags: ["post"],
-        };
-    }
+	constructor() {}
+	data() {
+		return {
+			tags: ["post"]
+		};
+	}
 
-    render(data) {
-        return ` 
+	render(data) {
+		return ` 
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
@@ -22,27 +24,30 @@ class Test {
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
 
+
 	<title>${data.title}</title> 
 
 	
 </head> 
 <body> 
-	<main class="super-container super-container-blog"> 
+	<main class="super-container super-container-blog">
+	${navbar}
+ 
 <img  src="${data.mainImage}" class="blog-main-img"/>
 
 	<div class="blog-container">
-
 	<div>
 	<h1 class="blog-title">  ${data.title}</h1>
 	</div>
 					${marked(data.content)} 
 
 	</div>
-	</main> 
+	</main>
+	${footer} 
 	</body>
 
 </html> `;
-    }
+	}
 }
 
 module.exports = Test;

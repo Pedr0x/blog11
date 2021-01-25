@@ -14,10 +14,10 @@ class Test {
 				<link rel="stylesheet" href="../../css/landing.css" />
 				<link rel="stylesheet" href="../../css/landing-mobile.css" />
 
-				${
-					""
-					/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>   "*/
-				}
+				
+				
+					 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>   
+			
 				<title>${data.title}</title>
 			</head>
 			<body>

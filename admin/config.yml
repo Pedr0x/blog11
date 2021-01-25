@@ -28,6 +28,29 @@ collections:
       fields: # The fields for each document, usually in front matter
           - { label: "Content", name: "body", widget: "markdown" }
 
+    - name: "colors"
+      label: "Colors"
+      slug: "{{slug}}"
+      extension: "json"
+      editor:
+          preview: false
+      files:
+          - file: "_data/cssColors.json"
+            label: "Light colors theme"
+            name: "cssColors"
+            fields:
+                - { name: primary, label: "Primary", widget: "color" }
+                - { name: secondary, label: "Secondary", widget: "color" }
+                - { name: tertiary, label: "tertiary", widget: "color" }
+                - { name: quart, label: "quart", widget: "color" }
+                - { name: quin, label: "Secondary", widget: "color" }
+                - { name: quin, label: "Secondary", widget: "color" }
+                - { name: light-text, label: "light-text", widget: "color" }
+                - { name: background, label: "Background", widget: "color" }
+                - { name: accent, label: "Accent", widget: "color" }
+                - { name: visited-link, label: "visited-link", widget: "color" }
+                - { name: invalid, label: "Invalid", widget: "color" }
+
     - name: "blog" # Used in routes, e.g., /admin/collections/blog
       label: "Blog" # Used in the UI
       folder: "posts-2019" # The path to the folder where the documents are stored

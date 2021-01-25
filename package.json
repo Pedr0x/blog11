@@ -7,7 +7,8 @@
 		"prestart": "node colorsVariablesCreator",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"serve": "ELEVENTY_ENV=dev npx eleventy --serve",
-		"start": "node colorsVariablesCreator && npm run serve"
+		"start": "node colorsVariablesCreator && npm run serve",
+		"build": "node colorsVariablesCreator && ELEVENTY_ENV=dev npx eleventy serve"
 	},
 	"repository": {
 		"type": "git",

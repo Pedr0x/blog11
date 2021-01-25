@@ -43,8 +43,7 @@ collections:
                 - { name: secondary, label: "Secondary", widget: "color" }
                 - { name: tertiary, label: "tertiary", widget: "color" }
                 - { name: quart, label: "quart", widget: "color" }
-                - { name: quin, label: "Secondary", widget: "color" }
-                - { name: quin, label: "Secondary", widget: "color" }
+                - { name: quin, label: "quin", widget: "color" }
                 - { name: light-text, label: "light-text", widget: "color" }
                 - { name: background, label: "Background", widget: "color" }
                 - { name: accent, label: "Accent", widget: "color" }

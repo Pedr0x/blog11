@@ -2,6 +2,10 @@ const fs = require("fs").promises;
 const cssColors = require("./_data/cssColors.json");
 const cssDarkColors = require("./_data/cssDarkThemeColors.json");
 
+function transformJsonToCssVariables(colors) {
+	return colors.map(v => `--${v[0]}: ${v[1]} `).join(";\n ");
+}
+
 function createCSSVariables(colorsObject, darkTheme) {
 	return `
 		:root {
@@ -34,5 +38,5 @@ async function createCssColorsFile(colors, cssDarkColors) {
 }
 
 createCssColorsFile(cssColors, cssDarkColors);
-console.log("1");
+console.log("21");
 module.exports = createCssColorsFile;

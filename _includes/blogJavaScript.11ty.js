@@ -1,7 +1,9 @@
 const marked = require("marked");
 const navbar = require("../components/navbar");
 const footer = require("../components/footer");
-
+const htmlHead = require("../constants/htmlHead");
+const scripts = require("../constants/scripts");
+/* #b5698c */
 class Test {
 	constructor() {}
 	data() {
@@ -15,14 +17,9 @@ class Test {
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	<link rel="stylesheet" href="../../css/main.css" />
-	<link rel="stylesheet" href="../../css/reset.css" />
-	<link rel="stylesheet" href="../../css/normalize.css" />
+	${htmlHead}
 	<link rel="stylesheet" href="../../css/blog.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+
 
 
 	<title>${data.title}</title> 
@@ -30,9 +27,9 @@ class Test {
 	
 </head> 
 <body> 
-	<main class="super-container super-container-blog">
+	<main class="super-container ">
 	${navbar}
- 
+ <div class="super-container-blog">
 <img  src="${data.mainImage}" class="blog-main-img"/>
 
 	<div class="blog-container">
@@ -42,9 +39,13 @@ class Test {
 					${marked(data.content)} 
 
 	</div>
-	</main>
+	</div>
 	${footer} 
+
+	</main>
+
 	</body>
+	${scripts}
 
 </html> `;
 	}

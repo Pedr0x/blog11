@@ -1,6 +1,8 @@
 const marked = require("marked");
 const navbar = require("../components/navbar");
 const footer = require("../components/footer");
+const htmlHead = require("../constants/htmlHead");
+const scripts = require("../constants/scripts");
 
 class Test {
 	constructor() {}
@@ -15,29 +17,27 @@ class Test {
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	<link rel="stylesheet" href="../../css/main.css" />
-	<link rel="stylesheet" href="../../css/reset.css" />
-	<link rel="stylesheet" href="../../css/normalize.css" />
-	<link rel="stylesheet" href="../../css/blog.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+	${htmlHead}
+	<link rel="stylesheet" href="../../css/about.css" />
 
 	<title> About</title> 
 </head> 
 <body> 
 	<main class="super-container "> 
 	${navbar}
-	<h1 class="blog-title"> About About</h1>
-	</div>
+	<div class="about-container">
+
+	<h1 class="about-title"> About About</h1>
 					${marked(data.content)} 
-	</div>
+
+                </div>
+				${footer}
+
 	</main> 
-	${footer}
+
 
 	</body>
-
+${scripts}
 </html> `;
 	}
 }

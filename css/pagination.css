@@ -13,9 +13,6 @@
 
 .pagination-item-container {
 	padding: 5%;
-	box-shadow: var(--box-shadow1);
-	border-radius: var(--border-radius);
-	background: var(--tertiary);
 }
 .pagination-item-name {
 	font-size: var(--BigSmall);
@@ -24,6 +21,7 @@
 }
 .pagination-item-about-text {
 	line-height: 24px;
+	color: var(--text);
 	font-size: var(--NormalB);
 }
 
@@ -39,14 +37,11 @@
 	cursor: not-allowed;
 	pointer-events: none;
 }
+
 .pagination-link,
 .pagination-link_invalid {
 	padding: 0 0.25rem;
 	font-weight: 500;
-}
-
-.pagination-link {
-	color: var(--primary);
 }
 
 .pagination-links-container {

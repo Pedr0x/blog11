@@ -1,3 +1,5 @@
+const htmlHead = require("../constants/htmlHead");
+
 exports.data = {
 	pagination: {
 		data: "data1",
@@ -31,14 +33,10 @@ class Test {
             <!DOCTYPE html> 
                 <html lang="en"> 
                 <head> 
-                    <meta charset="utf-8"> 
-                    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-                    <link rel="stylesheet" href="../../css/main.css" />
-                    <link rel="stylesheet" href="../../css/reset.css" />
-                    <link rel="stylesheet" href="../../css/normalize.css" />
+                 <meta charset="utf-8"> 
+                  ${htmlHead}
                     <link rel="stylesheet" href="../../css/blog.css" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com">
-                    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+                   
                     <title>3 Pagination</title> 
                 </head> 
 

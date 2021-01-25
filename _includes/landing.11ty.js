@@ -1,5 +1,7 @@
 const navbar = require("../components/navbar");
 const footer = require("../components/footer");
+const htmlHead = require("../constants/htmlHead");
+const scripts = require("../constants/scripts");
 
 class Test {
 	constructor() {}
@@ -8,23 +10,26 @@ class Test {
 		<!DOCTYPE html>
 		<html lang="en">
 			<head>
-				<meta charset="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="stylesheet" href="../../css/main.css" />
-				<link rel="stylesheet" href="../../css/reset.css" />
-				<link rel="stylesheet" href="../../css/normalize.css" />
+				${htmlHead}
 				<link rel="stylesheet" href="../../css/landing.css" />
 				<link rel="stylesheet" href="../../css/landing-mobile.css" />
-				<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+				${
+					""
+					/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>   "*/
+				}
 				<title>${data.title}</title>
 			</head>
 			<body>
 				<div class="super-container">
 					<div class="landing-super-container">
+						
+					</div>
 						<div class="landing-main-container">
 							${navbar}
+							
 							<div class="landing-side-content-super"> 
-								<div class="landing-side-content"> 
+								<div class="landing-side-content depth2"> 
 									<h4 class="landing-side-content-title">
 										Lorem ipsum
 									</h4>
@@ -37,16 +42,20 @@ class Test {
 							<main class="articles-container">
 								<div class="articles-inner">${data.content}</div>
 							</main>
+							<div class="landing-img-container grid-center">
+						<img class="landing-img depth1" src="../../uploads/mountains.jpg">
+						</div>
 						</div>
 						<div class="landing-banner-text-super">
-							<div class="landing-banner-text">
+							<div class="landing-banner-text depth3">
 								${data.landingData.mainBannerText}
 							</div>
 						</div>
+						${footer}
+
 					</div>
 
 				</div>
-				${footer}
 			</body>
 			<script>
 				if (window.netlifyIdentity) {
@@ -59,7 +68,8 @@ class Test {
 					});
 				}
 			</script>
-		</html>
+${scripts}
+			</html>
 				`;
 	}
 }

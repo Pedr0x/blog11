@@ -1,0 +1,12 @@
+{
+	"primary": "#1e90ff",
+	"secondary": "#7d4f74",
+	"tertiary": "#fff",
+	"quart": "#f1d302",
+	"quin": "#020100",
+	"light-text": "#6f6f6e",
+	"background": "#f2f3f5",
+	"accent": "#47c09f",
+	"visited-link": "#4c00b1",
+	"invalid": "#adadad"
+}

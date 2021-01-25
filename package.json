@@ -1,28 +1,29 @@
 {
-    "name": "blog11",
-    "version": "1.0.0",
-    "description": "blo",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "serve": "ELEVENTY_ENV=dev npx eleventy --serve",
-        "start": "npm run serve"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Pedr0x/blog11.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Pedr0x/blog11/issues"
-    },
-    "homepage": "https://github.com/Pedr0x/blog11#readme",
-    "devDependencies": {
-        "@11ty/eleventy": "^0.11.1"
-    },
-    "dependencies": {
-        "dayjs": "^1.10.3",
-        "marked": "^1.2.7"
-    }
+	"name": "blog11",
+	"version": "1.0.0",
+	"description": "blo",
+	"main": "index.js",
+	"scripts": {
+		"prestart": "node colorsVariablesCreator",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "ELEVENTY_ENV=dev npx eleventy --serve",
+		"start": "node colorsVariablesCreator && npm run serve"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pedr0x/blog11.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Pedr0x/blog11/issues"
+	},
+	"homepage": "https://github.com/Pedr0x/blog11#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.1"
+	},
+	"dependencies": {
+		"dayjs": "^1.10.3",
+		"marked": "^1.2.7"
+	}
 }

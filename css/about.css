@@ -1,0 +1,12 @@
+.about-container {
+	min-height: 100vh;
+}
+
+.about-title {
+	color: var(--quart);
+	font-weight: 500;
+}
+
+.about-container p {
+	color: var(--light-text);
+}

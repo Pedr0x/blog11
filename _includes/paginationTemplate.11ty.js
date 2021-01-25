@@ -1,5 +1,7 @@
 const navbar = require("../components/navbar");
 const footer = require("../components/footer");
+const htmlHead = require("../constants/htmlHead");
+const scripts = require("../constants/scripts");
 
 exports.data = {
 	pagination: {
@@ -35,41 +37,37 @@ exports.render = function (data) {
 	<!DOCTYPE html> 
 		<html lang="en"> 
 		<head> 
-			<meta charset="utf-8"> 
-			<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-			<link rel="stylesheet" href="../../css/main.css" />
-			<link rel="stylesheet" href="../../css/reset.css" />
-			<link rel="stylesheet" href="../../css/normalize.css" />
+			${htmlHead}
 			<link rel="stylesheet" href="../../css/pagination.css" />
 			<link rel="stylesheet" href="../../css/pagination-mobile.css" />
-			<link rel="preconnect" href="https://fonts.gstatic.com">
-			<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
 			<title>Pagination</title> 
 		</head> 
-
 		<body>
-			<main class="super-container">
-			${navbar}
-				<div class="paginated-list-super">
-					<div class="paginated-list-container">
-						${data.pagination.items
-							.map(item => {
-								return `
-						<div
-							class="pagination-item-super">
-							 <div class="pagination-item-container">
-							<h4 class="pagination-item-name">${item.name}</h4>
-							<p class="pagination-item-about-text">${item.about}</p>
-						</div>
+		<main class="super-container">
+		${navbar}
+			<div class="paginated-list-super">
+				<div class="paginated-list-container">
+					${data.pagination.items
+						.map(item => {
+							return `
+					<div
+						class="pagination-item-super">
+						 <div class="pagination-item-container depth1">
+						<h4 class="pagination-item-name">${item.name}</h4>
+						<p class="pagination-item-about-text">${item.about}</p>
 					</div>
-					`;
-							})
-							.join("")} ${links}
 				</div>
-			</main>
+				`;
+						})
+						.join("")} ${links}
+			</div>
+			</div>
 			${footer}
-		</body>
 
+		</main>
+	</body>
+	
+${scripts}
 		</html> 
 	`;
 };

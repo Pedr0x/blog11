@@ -34,5 +34,5 @@ async function createCssColorsFile(colors, cssDarkColors) {
 }
 
 createCssColorsFile(cssColors, cssDarkColors);
-
+console.log("1");
 module.exports = createCssColorsFile;

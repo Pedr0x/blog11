@@ -1,8 +1,8 @@
 const marked = require("marked");
-const navbar = require("../components/navbar");
-const footer = require("../components/footer");
-const htmlHead = require("../constants/htmlHead");
-const scripts = require("../constants/scripts");
+const navbar = require("../src/components/navbar");
+const footer = require("../src/components/footer");
+const htmlHead = require("../src/constants/htmlHead");
+const scripts = require("../src/constants/scripts");
 /* #b5698c */
 class Test {
 	constructor() {}

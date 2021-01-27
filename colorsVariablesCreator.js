@@ -3,21 +3,19 @@ const cssColors = require("./_data/cssColors.json");
 const cssDarkColors = require("./_data/cssDarkThemeColors.json");
 
 function transformJsonToCssVariables(colors) {
-	return colors.map(v => `--${v[0]}: ${v[1]} `).join(";\n ");
+	return Object.entries(colors)
+		.map(v => `--${v[0]}: ${v[1]} `)
+		.join(";\n ");
 }
 
 function createCSSVariables(colorsObject, darkTheme) {
 	return `
 		:root {
-		${Object.entries(colorsObject)
-			.map(v => `--${v[0]}: ${v[1]} `)
-			.join(";\n ")}
+			${transformJsonToCssVariables(colorsObject)}
 		}
 
 		.super-container_dark-mode{ 
-			${Object.entries(darkTheme)
-				.map(v => `--${v[0]}: ${v[1]} `)
-				.join(";\n ")}
+			${transformJsonToCssVariables(darkTheme)}
 		}
 
 	`;
@@ -26,7 +24,7 @@ function createCSSVariables(colorsObject, darkTheme) {
 async function createCssColorsFile(colors, cssDarkColors) {
 	try {
 		await fs.writeFile(
-			"./css/variables.css",
+			"./assets/css/variables.css",
 			createCSSVariables(colors, cssDarkColors),
 			err => {
 				if (err) throw err;
@@ -38,5 +36,5 @@ async function createCssColorsFile(colors, cssDarkColors) {
 }
 
 createCssColorsFile(cssColors, cssDarkColors);
-console.log("21");
+
 module.exports = createCssColorsFile;

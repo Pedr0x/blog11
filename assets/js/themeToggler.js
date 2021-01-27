@@ -5,6 +5,7 @@ const superContainer = document.querySelector(".super-container");
 let isDarkMode = false;
 
 if (localStorage.theme === "dark") toggle();
+
 function toggle() {
 	isDarkMode = !isDarkMode;
 	if (isDarkMode) {

@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
 	);
 
 	//adds the following folders to _site
-	eleventyConfig.addPassthroughCopy("css");
+	/* eleventyConfig.addPassthroughCopy("css"); */
 	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy("uploads");
 	eleventyConfig.addPassthroughCopy("admin");

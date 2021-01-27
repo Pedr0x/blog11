@@ -1,10 +1,9 @@
 const dayjs = require("dayjs");
 
-class Test {
+class Index {
 	constructor() {}
 	data() {
 		return {
-			name: "Ted",
 			date: "2029-06-01",
 			title: "Eleventy Blog",
 			layout: "landing.11ty.js"
@@ -12,29 +11,28 @@ class Test {
 	}
 	render(data) {
 		return ` 
-${data.collections.post
-	.map(
-		post => ` 
-		<div class="landing-blog-item-super"> 
-			<article class="landing-blog-item depth1">
-				<div class="article-title-container"> 
-					<h1 class="landing-blog-item-title">
-						<a href=${post.url}>${post.data.title}</a>
-					</h1>
-					<h3 class="landing-blog-item-date">
-					 	${dayjs(post.date).format("DD-MM-YYYY")} 
-					 </h3>
-				</div>
-				<h5 class="landing-blog-item-subtitle"> 
-	${post.data.landingText}
-
-	</h5>
-	</article>
-
-</div>`
-	)
-	.join("")}`;
+		${data.collections.post
+			.map(
+				post => ` 
+					<div class="landing-blog-item-super"> 
+						<article class="landing-blog-item depth1">
+							<div class="article-title-container"> 
+								<h1 class="landing-blog-item-title">
+									<a href=${post.url}>${post.data.title}</a>
+								</h1>
+								<h3 class="landing-blog-item-date">
+									${dayjs(post.date).format("DD-MM-YYYY")} 
+								</h3>
+							</div>
+							<h5 class="landing-blog-item-subtitle"> 
+								${post.data.landingText}
+						</h5>
+						</article>
+					</div>`
+			)
+			.join("")}
+		`;
 	}
 }
 
-module.exports = Test;
+module.exports = Index;

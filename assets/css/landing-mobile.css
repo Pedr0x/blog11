@@ -2,20 +2,19 @@
 	.landing-main-container {
 		grid-template-columns: 1fr;
 	}
-	.landing-side-content-super {
-		grid-column: 1;
-	}
-	.articles-container {
-		grid-column: 1;
-	}
-
-	.landing-main-container .navbar {
-		grid-column: 1;
-	}
 
 	.landing-banner-text-super {
 		padding: 0;
 	}
+
+	.landing-img {
+		max-height: 300px;
+	}
+
+	.landing-banner-text,
+	.landing-main-container .navbar,
+	.articles-container,
+	.landing-side-content-super,
 	.landing-img-container {
 		grid-column: 1;
 	}

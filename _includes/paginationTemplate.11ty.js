@@ -34,41 +34,28 @@ exports.render = function (data) {
 `;
 
 	return ` 
-	<!DOCTYPE html> 
-		<html lang="en"> 
-		<head> 
-			${htmlHead}
-			<link rel="stylesheet" href="../../css/pagination.css" />
-			<link rel="stylesheet" href="../../css/pagination-mobile.css" />
-			<title>Pagination</title> 
-		</head> 
-		<body>
-		<main class="super-container">
-		${navbar}
-			<div class="paginated-list-super">
-				<div class="paginated-list-container">
-					${data.pagination.items
-						.map(item => {
-							return `
-					<div
-						class="pagination-item-super">
-						 <div class="pagination-item-container depth1">
-						<h4 class="pagination-item-name">${item.name}</h4>
-						<p class="pagination-item-about-text">${item.about}</p>
-					</div>
-				</div>
-				`;
-						})
-						.join("")} ${links}
-				</div>
-			</div>
-			${footer}
-
-		</main>
-	</body>
-	
-${scripts}
-		</html> 
+		<!DOCTYPE html> 
+			<html lang="en"> 
+				<head> 
+					${htmlHead}
+					<link rel="stylesheet" href="../../assets/css/pagination.css" />
+					<link rel="stylesheet" href="../../assets/css/pagination-mobile.css" />
+					<title>Pagination</title> 
+				</head> 
+				<body>
+					<main class="super-container">
+						${navbar}
+						<div class="paginated-list-super">
+							<div class="paginated-list-container">
+								${data.content}			
+									${links}
+							</div>
+						</div>
+						${footer}
+					</main>
+				</body>
+				${scripts}
+			</html> 
 	`;
 };
 

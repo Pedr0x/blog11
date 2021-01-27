@@ -11,8 +11,8 @@ class Test {
 		<html lang="en">
 			<head>
 				${htmlHead}
-				<link rel="stylesheet" href="../../css/landing.css" />
-				<link rel="stylesheet" href="../../css/landing-mobile.css" />
+				<link rel="stylesheet" href="../../assets/css/landing.css" />
+				<link rel="stylesheet" href="../../assets/css/landing-mobile.css" />
 
 				
 				

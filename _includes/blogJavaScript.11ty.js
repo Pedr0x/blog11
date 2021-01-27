@@ -18,7 +18,7 @@ class Test {
 <html lang="en"> 
 <head> 
 	${htmlHead}
-	<link rel="stylesheet" href="../../css/blog.css" />
+	<link rel="stylesheet" href="../../assets/css/blog.css" />
 
 
 

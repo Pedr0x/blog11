@@ -18,3 +18,17 @@ function toggle() {
 }
 
 target.addEventListener("click", toggle);
+
+fetch("/api/posts.json")
+	.then(v => v.json())
+	.then(data => {
+		console.log(data);
+	})
+	.catch(err => console.log(err));
+
+fetch("/test-api/AAA.json")
+	.then(v => v.json())
+	.then(data => {
+		console.log(data);
+	})
+	.catch(err => console.log(err));

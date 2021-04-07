@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
 	//sets the types of the templates to transform
-	eleventyConfig.dataTemplateEngine = ["njk", "md", "11ty.js"];
+	eleventyConfig.dataTemplateEngine = ["md", "11ty.js"];
 	eleventyConfig.addFilter(
 		"relative",
 		(page, root = "/") => `${require("path").relative(page.filePathStem, root)}/`
